@@ -16,6 +16,7 @@
                       web-mode
                       rubocop
                       projectile-rails
+                      wakatime-mode
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
@@ -43,5 +44,6 @@
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (add-hook 'ruby-mode-hook 'rubocop-mode)
+(global-wakatime-mode 1)
 
 (provide 'init-packages)
