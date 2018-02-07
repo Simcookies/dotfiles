@@ -14,6 +14,8 @@
                       material-theme
                       ;; --------- Others --------
                       web-mode
+                      rubocop
+                      projectile-rails
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
@@ -40,5 +42,6 @@
        auto-mode-alist))
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 (provide 'init-packages)

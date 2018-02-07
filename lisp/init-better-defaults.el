@@ -9,4 +9,8 @@
 (global-auto-revert-mode 1)         ;; Auto revert file
 (setq linum-format "%03d ")         ;; format line mode
 
+;; Config of Code style
+(setq js-indent-level 2)            ;; Set Javascript intent to 2 (default 4)
+(setq ruby-insert-encoding-magic-comment nil)
+
 (provide 'init-better-defaults)
