@@ -10,13 +10,18 @@
                       ;; ------- Essentials ------
                       auto-complete
                       smex
+                      wakatime-mode
                       ;; --------- Themes --------
                       material-theme
                       ;; --------- Others --------
+                      lua-mode
+                      markdown-mode
+                      ;; ------- Ruby evn --------
                       web-mode
                       rubocop
                       projectile-rails
-                      wakatime-mode
+                      ;; ------ Python evn -------
+                      elpy
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
@@ -41,9 +46,11 @@
       (append
        '(("\\.erb\\'" . web-mode))
        auto-mode-alist))
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (add-hook 'ruby-mode-hook 'rubocop-mode)
-(global-wakatime-mode 1)
+(add-hook 'python-mode-hook 'elpy-mode)
 
 (provide 'init-packages)

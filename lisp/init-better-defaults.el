@@ -7,6 +7,7 @@
 (global-linum-mode 1)               ;; enable line numbers globally
 (global-hl-line-mode 1)             ;; Highlight current line
 (global-auto-revert-mode 1)         ;; Auto revert file
+(global-wakatime-mode 1)            ;; Enable wakatime mode
 (setq linum-format "%03d ")         ;; format line mode
 
 ;; Config of Code style
