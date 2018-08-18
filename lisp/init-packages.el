@@ -13,15 +13,18 @@
                       wakatime-mode
                       ;; --------- Themes --------
                       material-theme
+                      atom-one-dark-theme
                       ;; --------- Others --------
                       lua-mode
                       markdown-mode
-                      ;; ------- Ruby evn --------
+                      ;; ------- Ruby env --------
                       web-mode
                       rubocop
                       projectile-rails
-                      ;; ------ Python evn -------
+                      ;; ------ Python env -------
                       elpy
+                      ;; ------ Platformio -------
+                      platformio-mode
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
@@ -40,16 +43,18 @@
       (package-install pkg))))
 
 (ac-config-default)                 ;; Auto-Completion config
-;; (smex-initialize)                ;; Smex need initialize on first time
 
 (setq auto-mode-alist
       (append
        '(("\\.erb\\'" . web-mode))
        auto-mode-alist))
+
 (setq python-shell-interpreter "ipython"
       python-shell-interpreter-args "-i --simple-prompt")
 
+
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+(add-hook 'emacs-lisp-mode-hook 'auto-insert)
 (add-hook 'ruby-mode-hook 'rubocop-mode)
 (add-hook 'python-mode-hook 'elpy-mode)
 
