@@ -1,5 +1,8 @@
-;; Set package sites
-(require 'package)
+;;; Configure of Packages
+(require 'cl)         ;; Common Lips Extension
+(require 'recentf)    ;; Recent File Extension
+(require 'package)    ;; Set package sites
+
 (package-initialize)
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -11,6 +14,8 @@
                       auto-complete
                       smex
                       wakatime-mode
+                      exec-path-from-shell
+		      hungry-delete
                       ;; --------- Themes --------
                       material-theme
                       atom-one-dark-theme
@@ -28,8 +33,6 @@
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
-;; Common Lips Extension
-(require 'cl)
 (defun my/packages-installed-p ()
   (interactive)
   (loop for pkg in my/packages
@@ -42,7 +45,6 @@
     (when (not (package-installed-p pkg))
       (package-install pkg))))
 
-(ac-config-default)                 ;; Auto-Completion config
 
 (setq auto-mode-alist
       (append
