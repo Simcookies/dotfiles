@@ -3,7 +3,6 @@
 (require 'recentf)    ;; Recent File Extension
 (require 'package)    ;; Set package sites
 
-(package-initialize)
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
         ("melpa" . "http://melpa.org/packages/")
@@ -16,6 +15,7 @@
                       wakatime-mode
                       exec-path-from-shell
 		      hungry-delete
+		      smartparens
                       ;; --------- Themes --------
                       material-theme
                       atom-one-dark-theme
