@@ -1,7 +1,7 @@
 ;;; Configure of Packages
 (require 'cl)         ;; Common Lips Extension
 (require 'recentf)    ;; Recent File Extension
-(require 'package)    ;; Set package sites
+(require 'package)    ;; Package manager Extension
 
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -22,14 +22,15 @@
                       ;; --------- Others --------
                       lua-mode
                       markdown-mode
+		      web-mode
                       ;; ------- Ruby env --------
-                      web-mode
                       rubocop
-                      projectile-rails
                       ;; ------ Python env -------
                       elpy
                       ;; ------ Platformio -------
                       platformio-mode
+		      ;; ------- auctex ----------
+		      auctex
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 
@@ -45,19 +46,7 @@
     (when (not (package-installed-p pkg))
       (package-install pkg))))
 
-
-(setq auto-mode-alist
-      (append
-       '(("\\.erb\\'" . web-mode))
-       auto-mode-alist))
-
-(setq python-shell-interpreter "ipython"
-      python-shell-interpreter-args "-i --simple-prompt")
-
-
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (add-hook 'emacs-lisp-mode-hook 'auto-insert)
-(add-hook 'ruby-mode-hook 'rubocop-mode)
-(add-hook 'python-mode-hook 'elpy-mode)
 
 (provide 'init-packages)

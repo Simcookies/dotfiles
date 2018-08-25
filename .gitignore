@@ -3,3 +3,6 @@ auto-save-list/*
 elpa/*
 smex-items
 recentf
+bookmarks
+diary
+lisp/custom.el
