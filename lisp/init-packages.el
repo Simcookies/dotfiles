@@ -16,6 +16,7 @@
                       exec-path-from-shell
 		      hungry-delete
 		      smartparens
+		      multi-term
                       ;; --------- Themes --------
                       material-theme
                       atom-one-dark-theme
@@ -29,7 +30,7 @@
                       elpy
                       ;; ------ Platformio -------
                       platformio-mode
-		      ;; ------- auctex ----------
+		      ;; -------- auctex ---------
 		      auctex
                       ) "Default packages")
 (setq package-selected-packages my/packages)

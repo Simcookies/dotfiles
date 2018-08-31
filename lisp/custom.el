@@ -15,7 +15,7 @@
  '(org-agenda-files (quote ("~/org/work.org" "~/org/school.org")))
  '(package-selected-packages
    (quote
-    (auctex hungry-delete exec-path-from-shell elrb smartparens auto-complete smex wakatime-mode material-theme atom-one-dark-theme lua-mode markdown-mode web-mode rubocop elpy platformio-mode)))
+    (neotree auctex hungry-delete exec-path-from-shell elrb smartparens auto-complete smex wakatime-mode material-theme atom-one-dark-theme lua-mode markdown-mode web-mode rubocop elpy platformio-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

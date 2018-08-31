@@ -12,6 +12,7 @@
 (setq linum-format "%03d ")         ;; format line mode
 (ac-config-default)                 ;; Auto-Completion config
 (smartparens-global-mode 1)         ;; Enable smartparens mode globally
+(set-language-environment "UTF-8")  ;; Set languange encoding
 
 ;;; Different Config for GUI and Terminal
 (if (display-graphic-p)
