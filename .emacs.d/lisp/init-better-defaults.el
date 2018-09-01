@@ -1,7 +1,7 @@
 ;;; Common Config of Emacs
 (setq inhibit-startup-screen 1)     ;; Hide welcome message
 (setq make-backup-files nil)        ;; Unable making backup file
-(setq indent-tabs-mode nil)         ;; Using spaces instead of tabs when indenting.
+(setq-default indent-tabs-mode nil) ;; Using spaces instead of tabs when indenting.
 (global-linum-mode 1)               ;; enable line numbers globally
 (column-number-mode 1)              ;; Enable column number
 (global-hl-line-mode 1)             ;; Highlight current line

@@ -17,6 +17,7 @@
 		      hungry-delete
 		      smartparens
 		      multi-term
+                      htmlize
                       ;; --------- Themes --------
                       material-theme
                       atom-one-dark-theme
@@ -46,8 +47,5 @@
   (dolist (pkg my/packages)
     (when (not (package-installed-p pkg))
       (package-install pkg))))
-
-(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
-(add-hook 'emacs-lisp-mode-hook 'auto-insert)
 
 (provide 'init-packages)

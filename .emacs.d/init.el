@@ -4,6 +4,7 @@
 
 (require 'init-packages)
 (require 'init-better-defaults)
+(require 'init-elisp)
 (require 'init-org)
 (require 'init-ruby)
 (require 'init-python)
