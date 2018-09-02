@@ -1,0 +1,38 @@
+# Turn welcome message off
+startup_message off
+
+# Fix for residual editor text
+# If not, editor will be stay visible even when close it.
+altscreen on
+
+# define screen function key to Ctrl + T
+escape ^^^
+
+# Use 256 colors, or can use xterm-256color or rxvt-unicode-256color
+term screen-256color
+
+# set screen scroll
+defscrollback 1024
+
+# Turn off visual bell
+# screen will not make screen flash instead of a bell sound.
+vbell off
+
+# Encoding related
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+
+# Show customizing status (line include color)
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= .G}[ %{G}%H %{g}][%= %{= .w}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+
+# start from window 1
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
+
+# enable scroll
+termcapinfo xterm* ti@:te@

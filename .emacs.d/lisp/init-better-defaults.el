@@ -32,3 +32,4 @@
     ))
 
 (provide 'init-better-defaults)
+;;; init-better-defaults.el ends here
