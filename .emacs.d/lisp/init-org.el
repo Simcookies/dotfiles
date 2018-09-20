@@ -6,6 +6,7 @@
 (setq org-src-fontify-natively t)         ;; Enable syntax highlight
 (setq org-src-tab-acts-natively t)        ;; Enable TAB in languange buffer mode
 (setq org-html-postamble nil)             ;; Disable including of personal info at footer
+(setq org-ellipsis "…")
 
 (setq org-tag-alist '(("@work" . ?w)
 		      ("@home" . ?h)
