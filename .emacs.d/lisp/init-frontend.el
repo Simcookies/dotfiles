@@ -5,5 +5,7 @@
 	 ("\\.html\\'" . web-mode))
        auto-mode-alist))            ;; Set Web-mode for necessary case
 
+(rainbow-mode 1)
+
 (provide 'init-frontend)
 ;;; init-frontend.el ends here

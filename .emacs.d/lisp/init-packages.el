@@ -27,6 +27,7 @@
                       lua-mode
                       markdown-mode
 		      web-mode
+                      rainbow-mode
                       ;; ------- Ruby env --------
                       rubocop
                       ;; ------ Python env -------

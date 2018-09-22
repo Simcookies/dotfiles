@@ -7,6 +7,7 @@
 (global-hl-line-mode 1)             ;; Highlight current line
 (global-auto-revert-mode 1)         ;; Auto revert file
 (global-wakatime-mode 1)            ;; Enable wakatime mode
+(global-subword-mode 1)             ;; Move or delete as subword
 (recentf-mode 1)                    ;; Enable Recent file mode
 (setq recentf-max-menu-item 10)     ;; Set rencetf mode max items
 (setq linum-format "%03d ")         ;; format line mode
