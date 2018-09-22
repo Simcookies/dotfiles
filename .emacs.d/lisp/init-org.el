@@ -1,6 +1,11 @@
 (require 'ox-md)                          ;; Enable export to Markdown
 (require 'ox-beamer)                      ;; Enable export to beamer (slide)
 
+(add-hook 'org-mode-hook
+          (lambda ()
+            (linum-mode 0)
+            (when window-system (org-bullets-mode 1))))
+
 (setq org-log-done 'time)
 (setq org-log-done 'note)
 (setq org-src-fontify-natively t)         ;; Enable syntax highlight

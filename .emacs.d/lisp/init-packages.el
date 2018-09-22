@@ -10,6 +10,7 @@
 
 (defvar my/packages '(
                       ;; ------- Essentials ------
+                      beacon
                       auto-complete
                       smex
                       wakatime-mode
@@ -18,6 +19,7 @@
 		      smartparens
 		      multi-term
                       htmlize
+                      org-bullets
                       ;; --------- Themes --------
                       material-theme
                       atom-one-dark-theme

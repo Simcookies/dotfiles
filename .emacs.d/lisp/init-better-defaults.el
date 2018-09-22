@@ -13,16 +13,19 @@
 (ac-config-default)                 ;; Auto-Completion config
 (smartparens-global-mode 1)         ;; Enable smartparens mode globally
 (set-language-environment "UTF-8")  ;; Set languange encoding
+(defalias 'yes-or-no-p 'y-or-n-p)   ;; Change answer of Yes/No to y/n
 
 ;;; Different Config for GUI and Terminal
 (if (display-graphic-p)
     (progn
       (tool-bar-mode 0)                 ;; Unable tool bar
       (scroll-bar-mode 0)               ;; Unable scroll bar
-      (load-theme 'atom-one-dark 1)     ;; Use Atom On Dark Theme
+      (load-theme 'spacemacs-dark 1)    ;; Use Spacemacs Dark Theme
       (exec-path-from-shell-initialize) ;; Set $PATH from shell
       (delete-selection-mode 1)         ;; Enable replace of selecton
+      (beacon-mode 1)                   ;; Never get lost
       (setq ring-bell-function 'ignore) ;; Ignore ring bell
+      (global-prettify-symbols-mode 1)  ;; Prettify symbols
       (set-face-attribute 'default nil :font "Monaco-18" )
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
       )

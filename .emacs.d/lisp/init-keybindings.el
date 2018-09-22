@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-c t") 'multi-term)
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (keyboard-translate ?¥ ?\\)
 (keyboard-translate ?\C-h ?\C-?)
