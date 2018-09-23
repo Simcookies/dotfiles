@@ -2,6 +2,7 @@
 (require 'cl)         ;; Common Lips Extension
 (require 'recentf)    ;; Recent File Extension
 (require 'package)    ;; Package manager Extension
+(require 'smartparens-config)
 
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -20,7 +21,9 @@
 		      multi-term
                       htmlize
                       org-bullets
+                      diminish
                       ;; --------- Themes --------
+                      spacemacs-theme
                       material-theme
                       atom-one-dark-theme
                       ;; --------- Others --------
