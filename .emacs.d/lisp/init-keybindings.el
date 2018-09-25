@@ -10,7 +10,9 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c C-w") 'kill-whole-word)
-(global-set-key (kbd "C-q") 'mark-next-like-this)
+(global-set-key (kbd "C-c C-p") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c C-y") 'company-yasnippet)
 
 (keyboard-translate ?¥ ?\\)
 (keyboard-translate ?\C-h ?\C-?)

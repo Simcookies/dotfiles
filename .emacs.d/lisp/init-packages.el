@@ -12,7 +12,6 @@
 (defvar my/packages '(
                       ;; ------- Essentials ------
                       beacon
-                      auto-complete
                       smex
                       wakatime-mode
                       exec-path-from-shell
@@ -22,6 +21,11 @@
                       htmlize
                       org-bullets
                       diminish
+                      multiple-cursors
+                      ;; ------ Auto Complete ----
+                      yasnippet
+                      yasnippet-snippets
+                      company
                       ;; --------- Themes --------
                       spacemacs-theme
                       material-theme

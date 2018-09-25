@@ -4,6 +4,7 @@
 
 (require 'init-packages)
 (require 'init-better-defaults)
+(require 'init-prog-mode)
 (require 'init-helper)
 (require 'init-elisp)
 (require 'init-org)
