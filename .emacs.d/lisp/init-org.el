@@ -1,8 +1,7 @@
-(require 'ox-md)                          ;; Enable export to Markdown
-(require 'ox-beamer)                      ;; Enable export to beamer (slide)
-
 (add-hook 'org-mode-hook
           (lambda ()
+            (require 'ox-md)          ;; Enable export to Markdown
+            (require 'ox-beamer)      ;; Enable export to beamer (slide)
             (linum-mode 0)
             (when window-system (org-bullets-mode 1))))
 
@@ -17,10 +16,12 @@
 		      ("@home" . ?h)
 		      ("@school" . ?s)))
 
-;; Set default Org Agenda directory.
+(setq org-directory "~/org/")
 (setq org-agenda-files (list "~/org/work.org"
 			     "~/org/school.org"
 			     "~/org/home.org"))
+(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg/")
+(setq org-mobile-inbox-for-pull "~/org/inbox.org")
 
 (provide 'init-org)
 ;;; init-org.el ends here
