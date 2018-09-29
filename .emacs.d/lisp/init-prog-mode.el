@@ -2,17 +2,20 @@
 (add-hook
  'prog-mode-hook
  (lambda ()
-   (setq linum-format "%03d ")      ;; Format line mode
-   (linum-mode 1)                   ;; Enable line numbers
-   (hl-line-mode 1)                 ;; Highlight current line
-   (wakatime-mode 1)                ;; Enable wakatime mode
-   (company-mode 1)                 ;; Company for auto complete
-   (yas-minor-mode 1)               ;; Enable yasnippet mode
-   (subword-mode 1)                 ;; Move or delete as subword
-   (smartparens-mode 1)             ;; Enable smartparens mode
-   (hungry-delete-mode 1)           ;; Delete space/tab together
-   (rainbow-mode 1)                 ;; Show color with RGB value
+   (setq linum-format "%03d ")       ;; Format line mode
+   (linum-mode 1)                    ;; Enable line numbers
+   (hl-line-mode 1)                  ;; Highlight current line
+   (wakatime-mode 1)                 ;; Enable wakatime mode
+   (company-mode 1)                  ;; Company for auto complete
+   (yas-minor-mode 1)                ;; Enable yasnippet mode
+   (subword-mode 1)                  ;; Move or delete as subword
+   (smartparens-mode 1)              ;; Enable smartparens mode
+   (hungry-delete-mode 1)            ;; Delete space/tab together
+   (rainbow-mode 1)                  ;; Show color with RGB value
+   (setq show-trailing-whitespace 1) ;; Show unless space
    ))
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;;; Diminish some mirror mode
 (defmacro my/safe-diminish (file mode &optional new-name)
