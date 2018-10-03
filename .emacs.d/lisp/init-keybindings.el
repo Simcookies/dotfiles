@@ -14,7 +14,7 @@
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-y") 'company-yasnippet)
 
-(keyboard-translate ?¥ ?\\)
-(keyboard-translate ?\C-h ?\C-?)
+(define-key key-translation-map [?¥] [?\\])
+(define-key key-translation-map [?\C-h] [?\C-?])
 
 (provide 'init-keybindings)
