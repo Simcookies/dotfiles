@@ -13,6 +13,7 @@
 (global-set-key (kbd "C-c C-p") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-y") 'company-yasnippet)
+(global-set-key (kbd "<f8>") 'neotree-toggle)
 
 (define-key key-translation-map [?¥] [?\\])
 (define-key key-translation-map [?\C-h] [?\C-?])

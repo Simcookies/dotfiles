@@ -35,6 +35,7 @@
                       markdown-mode
 		      web-mode
                       rainbow-mode
+                      plantuml-mode
                       ;; ------- Ruby env --------
                       rubocop
                       ;; ------ Python env -------

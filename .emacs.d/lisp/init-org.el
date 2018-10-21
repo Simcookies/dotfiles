@@ -23,5 +23,9 @@
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg/")
 (setq org-mobile-inbox-for-pull "~/org/inbox.org")
 
+(setq calendar-location-name "Tokyo, Japan")
+(setq calendar-latitude 35.68)
+(setq calendar-longitude 139.77)
+
 (provide 'init-org)
 ;;; init-org.el ends here
