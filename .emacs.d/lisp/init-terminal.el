@@ -3,7 +3,6 @@
           (lambda ()
             (linum-mode 0)
             (beacon-mode 0)
-            (exec-path-from-shell-initialize) ;; Set $PATH from shell
             ))
 
 (provide 'init-terminal)

@@ -9,6 +9,7 @@
 (setq recentf-max-menu-item 10)     ;; Set rencetf mode max items
 (set-language-environment "UTF-8")  ;; Set languange encoding
 (defalias 'yes-or-no-p 'y-or-n-p)   ;; Change answer of Yes/No to y/n
+(exec-path-from-shell-initialize)   ;; Set $PATH from shell
 
 ;;; Different Config for GUI and Terminal
 (if (display-graphic-p)
