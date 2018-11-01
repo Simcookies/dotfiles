@@ -38,7 +38,7 @@
                       plantuml-mode
                       ;; ------- Ruby env --------
                       rubocop
-                      ;; ruby-test-mode
+                      ruby-test-mode
                       ;; ------ Python env -------
                       elpy
                       ;; ------ Platformio -------
