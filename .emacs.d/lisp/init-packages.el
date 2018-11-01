@@ -2,7 +2,6 @@
 (require 'cl)         ;; Common Lips Extension
 (require 'recentf)    ;; Recent File Extension
 (require 'package)    ;; Package manager Extension
-(require 'smartparens-config)
 
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -15,9 +14,9 @@
                       smex
                       wakatime-mode
                       exec-path-from-shell
-		      hungry-delete
-		      smartparens
-		      multi-term
+                      hungry-delete
+                      smartparens
+                      multi-term
                       htmlize
                       org-bullets
                       diminish
@@ -31,19 +30,21 @@
                       material-theme
                       atom-one-dark-theme
                       ;; --------- Others --------
+                      yaml-mode
                       lua-mode
                       markdown-mode
-		      web-mode
+                      web-mode
                       rainbow-mode
                       plantuml-mode
                       ;; ------- Ruby env --------
                       rubocop
+                      ;; ruby-test-mode
                       ;; ------ Python env -------
                       elpy
                       ;; ------ Platformio -------
                       platformio-mode
-		      ;; -------- auctex ---------
-		      auctex
+                      ;; -------- auctex ---------
+                      auctex
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 

@@ -1,4 +1,6 @@
 ;;; Config for Programming mode
+(require 'smartparens-config)
+
 (add-hook
  'prog-mode-hook
  (lambda ()
@@ -15,13 +17,9 @@
    (setq show-trailing-whitespace 1) ;; Show unless space
    ))
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;;; Diminish some mirror mode
-(defmacro my/safe-diminish (file mode &optional new-name)
-  "https://github.com/larstvei/dot-emacs/blob/master/init.org"
-  `(with-eval-after-load ,file
-     (diminish ,mode ,new-name)))
+(add-hook 'before-save-hook (lambda ()
+                              (delete-trailing-whitespace)
+                              (untabify (point-min) (point-max))))
 
 (my/safe-diminish "subword" 'subword-mode)
 (my/safe-diminish "beacon" 'beacon-mode)
