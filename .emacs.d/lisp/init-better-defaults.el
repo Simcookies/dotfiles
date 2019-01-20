@@ -9,14 +9,13 @@
 (setq recentf-max-menu-item 10)     ;; Set rencetf mode max items
 (set-language-environment "UTF-8")  ;; Set languange encoding
 (defalias 'yes-or-no-p 'y-or-n-p)   ;; Change answer of Yes/No to y/n
-(exec-path-from-shell-initialize)   ;; Set $PATH from shell
 
 ;;; Different Config for GUI and Terminal
 (if (display-graphic-p)
     (progn
       (tool-bar-mode 0)                 ;; Unable tool bar
       (scroll-bar-mode 0)               ;; Unable scroll bar
-      (load-theme 'spacemacs-dark 1)    ;; Use Spacemacs Dark Theme
+      (load-theme 'spacemacs-light 1)   ;; Use Spacemacs Dark Theme
       (delete-selection-mode 1)         ;; Enable replace of selecton
       (beacon-mode 1)                   ;; Never get lost
       (setq confirm-kill-emacs 'y-or-n-p)
@@ -24,6 +23,7 @@
       (global-prettify-symbols-mode 1)  ;; Prettify symbols
       (set-face-attribute 'default nil :font "Monaco-18" )
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+      (exec-path-from-shell-initialize) ;; Set $PATH from shell
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar

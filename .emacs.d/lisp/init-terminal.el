@@ -1,4 +1,4 @@
-(setq multi-term-program-switches "--login")
+;; (setq multi-term-program-switches "--login")
 (add-hook 'term-mode-hook
           (lambda ()
             (linum-mode 0)
