@@ -21,6 +21,7 @@
                       org-bullets
                       diminish
                       multiple-cursors
+                      neotree
                       ;; ------ Auto Complete ----
                       yasnippet
                       yasnippet-snippets

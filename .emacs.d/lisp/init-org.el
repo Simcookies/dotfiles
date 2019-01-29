@@ -13,15 +13,12 @@
 (setq org-ellipsis "…")
 
 (setq org-tag-alist '(("@work" . ?w)
-		      ("@home" . ?h)
-		      ("@school" . ?s)))
+                      ("@private" . ?h)
+                      ("@others" . ?s)))
 
-(setq org-directory "~/org/")
-(setq org-agenda-files (list "~/org/work.org"
-			     "~/org/school.org"
-			     "~/org/home.org"))
-(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg/")
-(setq org-mobile-inbox-for-pull "~/org/inbox.org")
+(setq org-directory "~/workspace/org/")
+(setq org-agenda-files (list "~/workspace/org/work.org"
+                             "~/workspace/org/private.org"))
 
 (setq calendar-location-name "Tokyo, Japan")
 (setq calendar-latitude 35.68)
