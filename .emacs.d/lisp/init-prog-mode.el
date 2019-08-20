@@ -15,6 +15,7 @@
    (hungry-delete-mode 1)            ;; Delete space/tab together
    (rainbow-mode 1)                  ;; Show color with RGB value
    (setq show-trailing-whitespace 1) ;; Show unless space
+   (hl-todo-mode 1)                  ;; Hight light keywords like TODO
    ))
 
 (add-hook 'before-save-hook (lambda ()
@@ -33,7 +34,7 @@
 ;;; Auto complete with company's config
 (add-hook 'company-mode-hook
           (lambda ()
-            (setq company-idle-delay 0)
+            (setq company-idle-delay 1)
             (setq company-minimum-prefix-length 1)))
 
 (add-hook 'yas-minor-mode-hook

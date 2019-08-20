@@ -22,6 +22,7 @@
                       diminish
                       multiple-cursors
                       neotree
+                      hl-todo
                       ;; ------ Auto Complete ----
                       yasnippet
                       yasnippet-snippets

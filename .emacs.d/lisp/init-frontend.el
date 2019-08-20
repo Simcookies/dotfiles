@@ -2,7 +2,8 @@
 (setq auto-mode-alist
       (append
        '(("\\.erb\\'" . web-mode)
-	 ("\\.html\\'" . web-mode))
+         ("\\.html\\'" . web-mode)
+         ("\\.tpl\\'" . web-mode))
        auto-mode-alist))            ;; Set Web-mode for necessary case
 
 (add-hook 'web-mode-hook

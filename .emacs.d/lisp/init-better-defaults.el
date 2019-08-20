@@ -21,11 +21,13 @@
       (setq confirm-kill-emacs 'y-or-n-p)
       (setq ring-bell-function 'ignore) ;; Ignore ring bell
       (global-prettify-symbols-mode 1)  ;; Prettify symbols
-      ;; (set-face-attribute 'default nil :font "Monaco-18" )
-      (set-face-attribute 'default nil :height 160)
+      (set-face-attribute 'default nil :height 180)
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-      (if (string-equal system-type "darwin")
-          (exec-path-from-shell-initialize)) ;; Set $PATH from shell (Just for MacOS)
+      (if (or
+           (string-equal system-type "darwin")
+           (string-equal system-type "gnu/linux"))
+          (exec-path-from-shell-initialize)) ;; Set $PATH from shell (Just for MacOS and Linux)
+      (nyan-mode 1)                     ;; Enable Nyan
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar

@@ -16,4 +16,6 @@
 (require 'init-tex)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
+(if (file-exists-p custom-file) nil
+  (write-region "" nil custom-file))
 (load-file custom-file)
