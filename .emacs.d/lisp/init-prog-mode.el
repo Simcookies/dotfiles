@@ -34,7 +34,7 @@
 ;;; Auto complete with company's config
 (add-hook 'company-mode-hook
           (lambda ()
-            (setq company-idle-delay 1)
+            (setq company-idle-delay 0)
             (setq company-minimum-prefix-length 1)))
 
 (add-hook 'yas-minor-mode-hook
