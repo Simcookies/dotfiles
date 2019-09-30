@@ -13,7 +13,6 @@
    (subword-mode 1)                  ;; Move or delete as subword
    (smartparens-mode 1)              ;; Enable smartparens mode
    (hungry-delete-mode 1)            ;; Delete space/tab together
-   (rainbow-mode 1)                  ;; Show color with RGB value
    (setq show-trailing-whitespace 1) ;; Show unless space
    (hl-todo-mode 1)                  ;; Hight light keywords like TODO
    ))

@@ -9,7 +9,9 @@
 (add-hook 'web-mode-hook
           (lambda ()
             (setq web-mode-markup-indent-offset 2)
-            (setq web-mode-css-indent-offset 2)))
+            (setq web-mode-css-indent-offset 2)
+            (rainbow-mode 1) ;; Show color with RGB value
+            ))
 
 (provide 'init-frontend)
 ;;; init-frontend.el ends here
