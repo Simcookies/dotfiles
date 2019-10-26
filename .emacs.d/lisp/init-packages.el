@@ -8,6 +8,8 @@
         ("melpa" . "http://melpa.org/packages/")
         ("org" . "http://orgmode.org/elpa/")))
 
+(setq package-check-signature nil)
+
 (defvar my/packages '(
                       ;; ------- Essentials ------
                       beacon
