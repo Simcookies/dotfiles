@@ -11,9 +11,9 @@
 (require 'init-ruby)
 (require 'init-python)
 (require 'init-frontend)
-(require 'init-keybindings)
 (require 'init-terminal)
 (require 'init-tex)
+(require 'init-keybindings)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 (if (file-exists-p custom-file) nil

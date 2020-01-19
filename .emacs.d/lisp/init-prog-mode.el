@@ -17,10 +17,6 @@
    (hl-todo-mode 1)                  ;; Hight light keywords like TODO
    ))
 
-(add-hook 'before-save-hook (lambda ()
-                              (delete-trailing-whitespace)
-                              (untabify (point-min) (point-max))))
-
 (my/safe-diminish "subword" 'subword-mode)
 (my/safe-diminish "beacon" 'beacon-mode)
 (my/safe-diminish "smartparens" 'smartparens-mode)
@@ -30,18 +26,32 @@
 (my/safe-diminish "company" 'company-mode)
 (my/safe-diminish "yasnippet" 'yas-minor-mode)
 
-;;; Auto complete with company's config
+;; Delete unless whitespace and use TAB globally
+(add-hook 'before-save-hook
+          (lambda ()
+            (delete-trailing-whitespace)
+            (untabify (point-min) (point-max))))
+
+;; Auto complete with company's config
 (add-hook 'company-mode-hook
           (lambda ()
             (setq company-idle-delay 0)
             (setq company-minimum-prefix-length 1)))
 
+;; Bind yas-expand to C-c y
 (add-hook 'yas-minor-mode-hook
           (lambda ()
             (define-key yas-minor-mode-map [(tab)] nil)
             (define-key yas-minor-mode-map (kbd "TAB") nil)
             (define-key yas-minor-mode-map (kbd "<tab>") nil)
             (define-key yas-minor-mode-map (kbd "C-c y") 'yas-expand)))
+
+;; Change UI for current highlight
+(add-hook 'hl-line-mode-hook
+          (lambda ()
+            ;; (set-face-background 'highlight "#222")
+            (set-face-foreground 'highlight nil)
+            (set-face-underline-p 'highlight nil)))
 
 (provide 'init-prog-mode)
 ;;; init-prog-mode.el ends here

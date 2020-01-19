@@ -1,3 +1,5 @@
+;;; Configuration for Python-mode
+;; Necessary python lib: Jedi, Rope Autopep8, Yapf, Black, flake8
 (add-hook 'python-mode-hook
           (lambda ()
             (setq
@@ -5,8 +7,7 @@
              python-indent 4
              python-shell-interpreter "ipython"
              python-shell-interpreter-args "-i --simple-prompt")
-            (setq pyenv_root (getenv "PYENV_ROOT"))
-            (pyvenv-activate (format "%s/%s" pyenv_root "versions/base"))
-            (elpy-mode 1)))
+            (setq elpy-rpc-virtualenv-path (quote current))
+            (elpy-enable)))
 
 (provide 'init-python)

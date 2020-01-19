@@ -40,6 +40,7 @@
                       web-mode
                       rainbow-mode
                       plantuml-mode
+                      nyan-mode
                       ;; ------- Ruby env --------
                       rubocop
                       robe

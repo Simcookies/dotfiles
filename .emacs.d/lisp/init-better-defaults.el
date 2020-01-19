@@ -31,7 +31,7 @@
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar
-    (load-theme 'material 1)            ;; Use material-theme
+    (load-theme 'wombat 1)              ;; Use material-theme
     ))
 
 (provide 'init-better-defaults)
