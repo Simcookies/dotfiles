@@ -35,7 +35,6 @@
                       atom-one-dark-theme
                       ;; --------- Others --------
                       yaml-mode
-                      lua-mode
                       markdown-mode
                       web-mode
                       rainbow-mode
@@ -51,6 +50,9 @@
                       platformio-mode
                       ;; -------- auctex ---------
                       auctex
+                      ;; ------- ESS for R -------
+                      ess
+                      ess-R-data-view
                       ) "Default packages")
 (setq package-selected-packages my/packages)
 

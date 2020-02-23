@@ -10,6 +10,8 @@
 (require 'init-org)
 (require 'init-ruby)
 (require 'init-python)
+;; (require 'init-c-cpp)
+(require 'init-rlang)
 (require 'init-frontend)
 (require 'init-terminal)
 (require 'init-tex)

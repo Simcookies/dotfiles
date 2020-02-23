@@ -21,7 +21,7 @@
       (setq confirm-kill-emacs 'y-or-n-p)
       (setq ring-bell-function 'ignore) ;; Ignore ring bell
       (global-prettify-symbols-mode 1)  ;; Prettify symbols
-      (set-face-attribute 'default nil :height 180)
+      (set-face-attribute 'default nil :font "Mono-16")
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
       (if (or
            (string-equal system-type "darwin")
@@ -31,7 +31,7 @@
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar
-    (load-theme 'wombat 1)              ;; Use material-theme
+    (load-theme 'material 1)              ;; Use material-theme
     ))
 
 (provide 'init-better-defaults)
