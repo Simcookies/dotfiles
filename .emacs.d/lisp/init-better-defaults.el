@@ -21,7 +21,7 @@
       (setq confirm-kill-emacs 'y-or-n-p)
       (setq ring-bell-function 'ignore) ;; Ignore ring bell
       (global-prettify-symbols-mode 1)  ;; Prettify symbols
-      (set-face-attribute 'default nil :font "Mono-16")
+      (set-face-attribute 'default nil :height 180)
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
       ;; Set $PATH from shell (Just for MacOS and Linux)
       (if (or
