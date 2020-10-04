@@ -15,7 +15,7 @@
     (progn
       (tool-bar-mode 0)                 ;; Unable tool bar
       (scroll-bar-mode 0)               ;; Unable scroll bar
-      (load-theme 'spacemacs-light 1)   ;; Use Spacemacs Dark Theme
+      (load-theme 'spacemacs-dark 1)    ;; Use Spacemacs Dark Theme
       (delete-selection-mode 1)         ;; Enable replace of selecton
       (beacon-mode 1)                   ;; Never get lost
       (setq confirm-kill-emacs 'y-or-n-p)
@@ -23,6 +23,7 @@
       (global-prettify-symbols-mode 1)  ;; Prettify symbols
       (set-face-attribute 'default nil :font "Mono-16")
       (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+      ;; Set $PATH from shell (Just for MacOS and Linux)
       (if (or
            (string-equal system-type "darwin")
            (string-equal system-type "gnu/linux"))
@@ -31,7 +32,7 @@
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar
-    (load-theme 'material 1)              ;; Use material-theme
+    (load-theme 'material 1)            ;; Use material-theme
     ))
 
 (provide 'init-better-defaults)

@@ -14,7 +14,7 @@
    (smartparens-mode 1)              ;; Enable smartparens mode
    (hungry-delete-mode 1)            ;; Delete space/tab together
    (setq show-trailing-whitespace 1) ;; Show unless space
-   (hl-todo-mode 1)                  ;; Hight light keywords like TODO
+   (hl-todo-mode 1)                  ;; Hight light keywords like TODO, FIXME
    ))
 
 (my/safe-diminish "subword" 'subword-mode)

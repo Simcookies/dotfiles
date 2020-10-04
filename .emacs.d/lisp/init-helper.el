@@ -36,5 +36,18 @@
   `(with-eval-after-load ,file
      (diminish ,mode ,new-name)))
 
+;; Get files of directory without . started
+(defun my/directory-files (d)
+  (interactive)
+  (directory-files d nil "^\\([^.]\\|\\.[^.]\\|\\.\\..\\)"))
+
+;; Select pyvenv
+(defun my/select-pyvenv ()
+  (interactive)
+  (let ((versions-root (concat (getenv "PYENV_ROOT") "/versions")))
+    (let ((ver (ido-completing-read "Select Python version: "
+                                    (my/directory-files versions-root))))
+      (pyvenv-activate (concat versions-root "/" ver)))))
+
 (provide 'init-helper)
 ;;; init-help.el ends until here.

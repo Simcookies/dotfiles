@@ -6,8 +6,9 @@
              python-indent-offset 4
              python-indent 4
              python-shell-interpreter "ipython"
-             python-shell-interpreter-args "-i --simple-prompt")
-            (setq elpy-rpc-virtualenv-path (quote current))
+             python-shell-interpreter-args "-i --simple-prompt"
+             elpy-rpc-virtualenv-path 'current)
+            (if buffer-file-name (my/select-pyvenv))
             (elpy-enable)))
 
 (provide 'init-python)

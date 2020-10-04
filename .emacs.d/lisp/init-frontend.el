@@ -1,9 +1,9 @@
 (setq js-indent-level 2)            ;; Set Javascript intent to 2 (default 4)
 (setq auto-mode-alist
       (append
-       '(("\\.erb\\'" . web-mode)
+       '(("\\.erb\\'"  . web-mode)
          ("\\.html\\'" . web-mode)
-         ("\\.tpl\\'" . web-mode))
+         ("\\.tpl\\'"  . web-mode))
        auto-mode-alist))            ;; Set Web-mode for necessary case
 
 (add-hook 'web-mode-hook
