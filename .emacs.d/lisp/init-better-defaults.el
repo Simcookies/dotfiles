@@ -13,6 +13,7 @@
 ;;; Different Config for GUI and Terminal
 (if (display-graphic-p)
     (progn
+      (menu-bar-mode 0)                 ;; Unable menu bar
       (tool-bar-mode 0)                 ;; Unable tool bar
       (scroll-bar-mode 0)               ;; Unable scroll bar
       (load-theme 'spacemacs-dark 1)    ;; Use Spacemacs Dark Theme
