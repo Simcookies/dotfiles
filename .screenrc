@@ -6,7 +6,7 @@ startup_message off
 altscreen on
 
 # define screen function key to Ctrl + T
-escape ^^^
+escape ^TT
 
 # Use 256 colors, or can use xterm-256color or rxvt-unicode-256color
 term screen-256color

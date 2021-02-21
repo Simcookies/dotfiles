@@ -36,7 +36,9 @@
 (add-hook 'company-mode-hook
           (lambda ()
             (setq company-idle-delay 0)
-            (setq company-minimum-prefix-length 1)))
+            (setq company-minimum-prefix-length 1)
+            (setq company-selection-wrap-around t)
+            ))
 
 ;; Bind yas-expand to C-c y
 (add-hook 'yas-minor-mode-hook
