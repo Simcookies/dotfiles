@@ -4,7 +4,7 @@
 (add-hook
  'prog-mode-hook
  (lambda ()
-   (setq linum-format "%03d ")       ;; Format line mode
+   (setq linum-format "%4d \u2502 ") ;; Format line mode
    (linum-mode 1)                    ;; Enable line numbers
    (hl-line-mode 1)                  ;; Highlight current line
    (wakatime-mode 1)                 ;; Enable wakatime mode
@@ -51,7 +51,6 @@
 ;; Change UI for current highlight
 (add-hook 'hl-line-mode-hook
           (lambda ()
-            ;; (set-face-background 'highlight "#222")
             (set-face-foreground 'highlight nil)
             (set-face-underline-p 'highlight nil)))
 
