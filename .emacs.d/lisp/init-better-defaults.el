@@ -30,6 +30,7 @@
            (string-equal system-type "gnu/linux"))
           (exec-path-from-shell-initialize)) ;; Set $PATH from shell (Just for MacOS and Linux)
       (nyan-mode 1)                     ;; Enable Nyan
+      (doom-modeline-mode 1)            ;; Doom Modeline Mode
       )
   (progn
     (menu-bar-mode 0)                   ;; Unable menu bar

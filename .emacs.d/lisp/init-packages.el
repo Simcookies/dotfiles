@@ -33,6 +33,7 @@
                       spacemacs-theme
                       material-theme
                       atom-one-dark-theme
+                      doom-modeline
                       ;; --------- Others --------
                       yaml-mode
                       markdown-mode
