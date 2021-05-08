@@ -21,7 +21,7 @@ set virtualedit=onemore
 " Smart intent
 set smartindent
 " Visualize beep sound
-set visualbell
+" set visualbell
 " Show corresponding parentheses
 set showmatch
 " Show status line always
